@@ -1,0 +1,37 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<nav class="navbar navbar-expand-md navbar-dark py-2">
+
+  <!-- logo -->
+  <a class="navbar-brand" href="/">
+    <img src="{% static 'npt/images/npt4.ico' %}" alt="" width="80" height="35">
+  </a>
+
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collection of nav links, forms, and other content for toggling -->
+  <div id="navbarCollapse" class="collapse navbar-collapse">
+    <div class="navbar-nav nav-pills ml-auto">
+      <a href="/" class="nav-item nav-link {{actdict.home}} text-white" id="copy_info">Home</a>
+      <!--<a href="/collection" class="nav-item nav-link {{actdict.collec}} text-white" id="copy_info">Collectie</a>-->    
+      <!--<a href="/gallery" class="nav-item nav-link {{actdict.gallery}} text-white" id="copy_info">Gallerij</a>-->
+      <a href="/about" class="nav-item nav-link {{actdict.about}} text-white" id="copy_info">Over Ons</a>
+      <a href="/contact" class="nav-item nav-link {{actdict.contact}} text-white" id="copy_info">Contact</a>
+      <a href="/faq" class="nav-item nav-link {{actdict.faq}} text-white" id="copy_info">Faq</a>
+    </div>
+    <div class="navbar-nav ml-auto">
+      <!--<a href="#" class="nav-item nav-link text-white"><i class="fa fa-facebook"></i></a>-->
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block secttitle %} Faq {% endblock %}
+{% block sectdesc %} Veelgestelde vragen over tapijten {% endblock sectdesc %}
+
+
+<head>
+    {% block link %}
+      <link href="{% static 'npt/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+      <link href="{% static 'npt/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'npt/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+      <link href="{% static 'npt/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+      <link href="{% static 'npt/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+      <link href="{% static 'npt/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+      <link href="{% static 'npt/mainfiles/style.css' %}" rel="stylesheet">
+      <link href="{% static 'npt/css/Faq.css' %}" rel="stylesheet">
+    {% endblock %}
+  
+    {% block title %} npt - faq {% endblock %}
+  </head>
+
+{% block content %}
+
+<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+  <div class="container">
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+          {% for f in flist %}
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading{{f.id}}">
+                <h3 class="panel-title">
+                <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse{{f.id}}"
+                 aria-expanded="true" aria-controls="collapse{{f.id}}">
+                    {{f.q}}
+                </a>
+                </h3>
+            </div>
+            <div id="collapse{{f.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{f.id}}">
+                <div class="panel-body px-3 mb-4">
+                    {{f.a | safe}}
+                </div>
+		    </div>
+          {% endfor %}
+		</div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

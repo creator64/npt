@@ -1,0 +1,64 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block secttitle %} Over Ons {% endblock %}
+
+<head>
+  {% block link %}
+    <link href="{% static 'npt/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/mainfiles/style.css' %}" rel="stylesheet">
+    <link href="{% static 'npt/css/About.css' %}" rel="stylesheet">
+  {% endblock %}
+
+  {% block title %} npt - over ons {% endblock %}
+</head>
+
+{% block content %}
+<section id="about" class="about">
+    <div class="container-fluid">
+      <div class="container-content">
+        <div class="row ms-4 rowc">
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3> Over de familie Ayar </h3>
+            <p>
+              De familie Ayar is een grote familie die al meer dan 130 jaar gespecialiseerd is in Perzische tapijten. 
+              Het begon met het beheer van de productie in de beroemde tapijtweverijen van Kashan, Iran, in de 19de eeuw. <br>
+              Deze produceerden onder andere voor bestellingen uit Frankrijk, Duitsland en de VS. 
+              Later hield de familie zich ook bezig met de handel van Perzische tapijten 
+              in de plaatselijke bazaar van Iran en in het buitenland. 
+              Ook nu nog verkoopt de familie dagelijks Perzische tapijten op de bazaar.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="{% static 'npt/images/oprichter.jpg' %}" class="img-fluid mt-4" alt="">
+            <figcaption> <i> Links: de twee oprichters van NPT </i> </figcaption>
+          </div>
+        </div>
+        <div class="row ms-4 rowc">
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3> Over NPT </h3>
+            <p>
+              Met de oprichting van het familiebedrijf NPT in 1974 kwam de handel ook in Nederland terecht.
+              Het product viel al snel in goede smaak bij de Rotterdamse gezinnen en bedrijven. <br>
+              In eerste instantie richtte ons bedrijf zich op Perzische handvervaardigde kunststukken, 
+              maar door de groeiende vraag besloten we later om onze collectie te verbreden 
+              en richtten we ons ook op algemene Oosterse vloerkleden uit het gebied dat zich strekt tussen China en Noord-Afrika. <br>
+              We hebben dus een breed assortiment en wij kunnen u met een combinatie 
+              van onze ervaring en expertise helpen en adviseren met het uitzoeken van een nieuw kleed.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="{% static 'npt/images/storeold.jpg' %}" class="img-fluid mt-4" alt="">
+            <figcaption> <i> NPT in de jaren '80 </i> </figcaption>
+          </div>
+        </div>
+    </div>
+  </section><!-- End About Us Section -->
+
+{% endblock %}

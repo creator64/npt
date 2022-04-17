@@ -1,0 +1,265 @@
+/**
+* Template Name: Green - v4.1.0
+* Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*
+#BA200D (steenrood)
+rgba(59,0,0,.5) (grijsachtig)
+#E55137 (zalmrood)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --red: #BA200D;
+  --l-red: #f53131;
+  --light-red: #fa3a3a;
+  --red2: #d43c3cd5;
+  --red-fade: rgba(102, 6, 6, 0.164);
+  --red-fade-2: rgba(211, 17, 17, 0.801); /* lekker opvallend */
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2c2a2a;
+  word-spacing: 4px;
+}
+
+body, html{
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  /* color: #7cb1e2; */
+  color: var(--red);
+  transition: 0.5s;
+}
+
+a:hover {
+  /*color: #c4c10f;*/
+  text-decoration: underline;
+  color: var(--red);
+  cursor: pointer;
+}
+
+/*h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}*/
+
+.buttonround{
+  /*background: #5c80b1;*/
+  background: var(--red);
+  color: #fff;
+  transition: 0.4s;
+  border: 0;
+  padding: 10px 24px;
+  border-radius: 7px;
+}
+
+.buttonround:hover{
+  /*background: #336a8f;*/
+  background: var(--l-red);
+}
+
+img.rounded {
+  border-radius: 10%;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #5cb874;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #78c48c;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+.navbar .form-inline {
+  display: inline-block;
+}
+.navbar .navbar-header.col {
+  padding: 0 !important;
+} 
+.navbar {   
+  /*background: #f3f3a9;  /*linear-gradient(#4988d6, #6DAFFE);*/
+  background: var(--red);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar .nav-link {
+  margin: 3px 3px;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+}
+.navbar .nav-link img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 0px 0;
+  float: left;
+}
+.navbar .navbar-brand {
+  color: #555;
+  padding-left: 0;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+.navbar .navbar-brand b {
+  font-weight: bold;
+  color: #eb5844;
+}
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+  color: #f1c50e !important;
+}
+.navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
+  color: white !important;
+  background: var(--l-red) !important;
+}
+
+.navbar .nav-item i {
+  font-size: 18px;
+}
+.navbar .dropdown-item i {
+  font-size: 16px;
+  min-width: 22px;
+}
+.navbar .nav-item.show > a {
+  background: none !important;
+}
+.navbar .dropdown-menu {
+  border-radius: 1px;
+  border-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+  color: #777;
+  padding: 300px 20px;
+  line-height: normal;
+  font-size: 15px;
+}
+
+@media (min-width: 992px){
+  .navbar .form-inline .input-group {
+    width: 250px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 991px){
+  .navbar .form-inline {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .navbar .input-group {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+.section-bg {
+  background-color: #f8fcf9;
+}
+
+.section-title {
+  text-align: center;
+  padding: 0px 30px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.section-title .title {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  /*color: #4c7397;*/
+  color: var(--red-fade-2);
+}
+
+.section-title .title::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: rgb(186, 212, 233);
+  bottom: 1px;
+  left: calc(50% - 75px);
+}
+
+.section-title .title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 6px;
+  /*background: #2674ce;*/
+  background: var(--l-red);
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title .desc {
+  margin-bottom: 0;
+  font-size: 17px;
+  /*color: #336699;*/
+  color: black;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .section-title .desc{
+    padding: 0 60px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.page-footer{
+  background-color: rgba(0, 0, 0, 0.863);
+}

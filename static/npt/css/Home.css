@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+
+.intro-video{
+  line-height: 0;
+  border-bottom: 0px solid;
+}
+
+.intro-video-embed {
+  position: relative;
+  padding-bottom: 50%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.intro-video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------
+# textbox
+--------------------------------------------------------------*/
+.textbox {
+    /*background: var(--red-fade-2);*/
+    /*background: #e91b1b42;*/
+    padding-top: 50px;
+    padding-bottom: 65px;
+    line-height: 1.6rem;
+    color: black;
+  }
+  
+  .textbox .title {
+    font-weight: 800;
+    margin-bottom: 17px;
+    font-size: 32px;
+    color: var(--red);
+    font-style: italic;
+  }
+
+  .textbox .subtitle{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .textbox .body {
+    font-size: 16px;
+    /*margin-bottom: 35px;*/
+    word-spacing: 6px;
+    font-weight: 300;
+  }
+  
+  .textbox .subtext{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    display: flex;
+  }
+  
+  .textbox .textbox-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 2px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  .textbox .textbox-btn:hover {
+    background: #fff;
+    color: #4c7397;
+  }
+
+  .textbox div.trim {
+    max-width: 700px;
+    max-height: 400px;
+    overflow: hidden;
+    display: block;
+  }
+  
+  @media (max-width: 1024px) {
+    .textbox {
+      background-attachment: scroll;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .textbox .textbox-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+  }
+
+/*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+.featured-services {
+  padding: 20px 0;
+  /*background-color: var(--red-fade);*/
+}
+
+.featured-services .feature {
+  padding: 20px;
+}
+
+.featured-services .icon-box {
+  color: white;
+  font-size: 45px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(var(--red), rgb(128, 18, 18));
+  width: 4rem; height: 4rem;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  border-radius: 0.75rem;
+}
+
+.featured-services .title {
+  font-weight: 600;
+  color: #222222;
+  font-size: 32px;
+}
+
+.featured-services .description {
+  line-height: 24px;
+  font-size: 18px;
+}
