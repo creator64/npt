@@ -17,11 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from main import views as view_main
 from django.conf.urls.static import static
-
 from django.conf import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     path("", view_main.home),
     path("contact/", view_main.contact),
     path("about/", view_main.about),
