@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("NPT_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("NPT_DEBUG_VALUE"==1)
+DEBUG = os.environ.get("NPT_DEBUG_VALUE") == 1
 
 ALLOWED_HOSTS = ['192.168.1.12',
                  '127.0.0.1',
